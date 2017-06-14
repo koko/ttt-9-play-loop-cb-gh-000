@@ -36,3 +36,12 @@ def turn(board)
 end
 
 # Define your play method below
+
+def play(board)
+  #until game is over (board full or player wins)
+  turns = 0
+  until turns.equal?(9)
+    turn(board)
+    turns += 1
+  end
+end
